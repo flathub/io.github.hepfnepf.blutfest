@@ -1,17 +1,17 @@
 app-id: io.github.hepfnepf.blutfest
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.godotengine.godot.BaseApp
 # Godot version
-base-version: '3.6'
+base-version: '3.6-25.08'
 command: godot-runner
 finish-args:
   - --share=ipc
   - --socket=x11 # <-- Godot needs X11
   - --socket=pulseaudio
   - --device=dri
-  - --device=all 
+  - --device=all
 modules:
   - name: Blutfest
     buildsystem: simple
@@ -19,10 +19,10 @@ modules:
       # The game itself
       - install -D Blutfest.pck /app/bin/godot-runner.pck
       # Metadata and a .desktop file
-      - install -D  io.github.hepfnepf.blutfest.desktop /app/share/applications/io.github.hepfnepf.blutfest.desktop
-      - install -D  io.github.hepfnepf.blutfest.metainfo.xml /app/share/metainfo/io.github.hepfnepf.blutfest.metainfo.xml
+      - install -D  ${FLATPAK_ID}.desktop -t /app/share/applications/
+      - install -D  ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
       # Icons
-      - install -D  icon.png /app/share/icons/hicolor/512x512/apps/io.github.hepfnepf.blutfest.png
+      - install -D  ${FLATPAK_ID}.png -t /app/share/icons/hicolor/512x512/apps/
     sources:
       - type: file
         url: https://github.com/hepfnepf/Blutfest/releases/download/v0.4.3/Blutfest.pck
@@ -36,3 +36,4 @@ modules:
       - type: file
         url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/7819d6911e9b4a6e220158e5868f5ec6fba4071b/flatpak/icon.png
         sha256: 3d7bed6f37b1efe94b664ea623853a18702455dccb4716ce54e362b723e933cf
+        dest-filename: io.github.hepfnepf.blutfest.png

@@ -1,6 +1,6 @@
 app-id: io.github.hepfnepf.blutfest
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 base: org.godotengine.godot.BaseApp
 # Godot version
@@ -31,8 +31,8 @@ modules:
         url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/7819d6911e9b4a6e220158e5868f5ec6fba4071b/flatpak/io.github.hepfnepf.blutfest.desktop
         sha256: 7e9a87e747ceb39137fe2de56e0a218ef0c543d3569c473df11247764b2dc9df
       - type: file
-        url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/1a1c8e373de7cf6786b39f4ce705d7f5d5036cdd/flatpak/io.github.hepfnepf.blutfest.metainfo.xml
-        sha256: 90a194390e8930d5ee8032e57ff197271b9752b4709760b0c5cfa67782e4f2c3
+        url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/ed73167a053c4605692ebbccd69e50531d9ad994/flatpak/io.github.hepfnepf.blutfest.metainfo.xml
+        sha256: ff9175d48a894f270c2d48b80003ba76ab6b01608acc201f6b29543546deeb5a
       - type: file
         url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/7819d6911e9b4a6e220158e5868f5ec6fba4071b/flatpak/icon.png
         sha256: 3d7bed6f37b1efe94b664ea623853a18702455dccb4716ce54e362b723e933cf

@@ -31,8 +31,8 @@ modules:
         url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/7819d6911e9b4a6e220158e5868f5ec6fba4071b/flatpak/io.github.hepfnepf.blutfest.desktop
         sha256: 7e9a87e747ceb39137fe2de56e0a218ef0c543d3569c473df11247764b2dc9df
       - type: file
-        url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/0c33bd78148dce6a4581e780abd7b5fcb7b7bc20/flatpak/io.github.hepfnepf.blutfest.metainfo.xml
-        sha256: 6403fb246ea501bfc6accb2a2563739a048d5b96ea6d3776a789a2d92a309b94
+        url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/ed73167a053c4605692ebbccd69e50531d9ad994/flatpak/io.github.hepfnepf.blutfest.metainfo.xml
+        sha256: ff9175d48a894f270c2d48b80003ba76ab6b01608acc201f6b29543546deeb5a
       - type: file
         url: https://raw.githubusercontent.com/hepfnepf/BlutfestBuilding/7819d6911e9b4a6e220158e5868f5ec6fba4071b/flatpak/icon.png
         sha256: 3d7bed6f37b1efe94b664ea623853a18702455dccb4716ce54e362b723e933cf
